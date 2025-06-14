@@ -1,10 +1,11 @@
 # AraLightMeta
 
-# Meta-analysis of high light (HL) response of A. thaliana using our integrative resource data AraLightDEGs (https://www.sysbio.ru/aralightdegs/).
+# Meta-analysis of high light (HL) response of A. thaliana using our integrative resource AraLightDEGs (https://www.sysbio.ru/aralightdegs/).
 
 This repository contains a single computation script named AraLightMeta.R and transcriptomic data for A. thaliana leaves and seedlings in high light conditions. 
 
 The analysis starts with data clustering and ends with reconstruction of gene regulatory networks.
+
 
 # Main objectives:
 Comparative analysis of short-term and long-term responses to high light.
