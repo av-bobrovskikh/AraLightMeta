@@ -32,7 +32,9 @@ ATH_GO_GOSLIM.txt
 
 edges_test_(short/long)_(leaves/seedlings).rds
 
-analysis.R # Main R script for running the full analysis pipeline
+Main R script for running the full analysis pipeline:
+
+AraLightMeta.R 
 
 # Output folders and files: 
 1_step_results folder:
