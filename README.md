@@ -24,19 +24,19 @@ edges_test_(short/long)_(leaves/seedlings).rds
 analysis.R # Main R script for running the full analysis pipeline
 
 # Output files: 
-# 1_step_results:
+1_step_results:
 Results of the first stage: initial processing and clustering
 Aggregated and normalized expression data
 Clustering of experimental conditions
 GO enrichment for frequently DEGs
 
-# 2_step_results_(leaves|seedlings):
+2_step_results_(leaves|seedlings):
 Results of the second stage: gene classification and tissue-specific analysis
 Gene classification by response type (short-term vs. long-term)
 Heatmaps of key functional groups (PhANGs, photomorphogenesis, redoxins, etc.)
 Venn diagrams and detailed statistics for specific DEGs
 
-# 3_step_results_(leaves|seedlings):
+3_step_results_(leaves|seedlings):
 Results of the third stage: co-expression and regulatory network reconstruction
 WGCNA-based coexpression networks
 GENIE3-derived regulatory interactions
