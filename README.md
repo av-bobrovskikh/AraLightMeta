@@ -6,8 +6,11 @@ This repository contains single computation script names AraLightMeta.R and tran
 
 # Main objectives:
 Comparative analysis of short-term and long-term responses to high light.
+
 Identification of key transcription factors and signaling pathways involved in the HL response.
+
 Detailed visualization of data and results: dendrograms, heatmaps, Sankey diagrams, and regulatory network graphs.
+
 Functional annotation of genes via Gene Ontology (GO) enrichment analysis.
 
 # Technologies and libraries:
