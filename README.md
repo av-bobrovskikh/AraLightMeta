@@ -47,6 +47,7 @@ Clustering of experimental conditions
 
 GO enrichment for frequently DEGs
 
+
 2_step_results_(leaves|seedlings) folder:
 
 Results of the second stage: gene classification and tissue-specific analysis
@@ -56,6 +57,7 @@ Gene classification by response type (short-term vs. long-term)
 Heatmaps of key functional groups (PhANGs, photomorphogenesis, redoxins, etc.)
 
 Venn diagrams and detailed statistics for specific DEGs
+
 
 3_step_results_(leaves|seedlings) folder:
 
