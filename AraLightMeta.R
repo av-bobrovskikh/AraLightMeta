@@ -26,7 +26,7 @@ required_cran <- c("edgeR", "dendextend", "RColorBrewer", "circlize", "ggplot2",
                   "pheatmap", "ggvenn", "ggraph", "tidygraph", "igraph", "reshape2",
                   "gridExtra", "WGCNA", "biomaRt", "broom")
 
-required_bioc <- c("clusterProfiler", "org.At.tair.db", "GENIE3")
+required_bioc <- c("clusterProfiler", "org.At.tair.db", "biomaRt", "GENIE3")
 
 # Install CRAN packages
 for (pkg in required_cran) {
