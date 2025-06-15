@@ -81,17 +81,17 @@ If required packages are not installed, run the following commands:
 
 Install from CRAN
 
-install.packages(c("edgeR", "dendextend", "RColorBrewer", "circlize",
-                   "ggplot2", "pheatmap", "ggraph", "tidygraph", "igraph",
-                   "WGCNA", "GENIE3", "tidyverse", "gridExtra", "reshape2",
-                   "purrr", "stringr"))
+install.packages(c("edgeR", "dendextend", "RColorBrewer", "circlize", "ggplot2", 
+                  "dplyr", "purrr", "stringr", "tidyverse", "scales", "tidyr",
+                  "pheatmap", "ggvenn", "ggraph", "tidygraph", "igraph", "reshape2",
+                  "gridExtra", "WGCNA", "biomaRt", "broom"))
 
 Install Bioconductor packages
 
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
-BiocManager::install(c("clusterProfiler", "org.At.tair.db", "biomaRt"))
+BiocManager::install(c("clusterProfiler", "org.At.tair.db", "biomaRt", "GENIE3"))
 
 2. Open the main script (AraLightMeta.R) in RStudio or execute it in an R console.
    
