@@ -91,7 +91,7 @@ Install Bioconductor packages
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
-BiocManager::install(c("clusterProfiler", "org.At.tair.db", "biomaRt", "GENIE3"))
+BiocManager::install(c("clusterProfiler", "org.At.tair.db", "GENIE3"))
 
 2. Open the main script (AraLightMeta.R) in RStudio or execute it in an R console.
    
