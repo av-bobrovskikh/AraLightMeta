@@ -84,7 +84,7 @@ Install from CRAN
 install.packages(c("edgeR", "dendextend", "RColorBrewer", "circlize", "ggplot2", 
                   "dplyr", "purrr", "stringr", "tidyverse", "scales", "tidyr",
                   "pheatmap", "ggvenn", "ggraph", "tidygraph", "igraph", "reshape2",
-                  "gridExtra", "WGCNA", "biomaRt", "broom"))
+                  "gridExtra", "WGCNA", "biomaRt", "broom", "networkD3"))
 
 Install Bioconductor packages
 
