@@ -170,7 +170,7 @@ metadata$TISSUE_GROUPED <- ifelse(
 )
 
 # Create dendrogram
-hc <- hclust(dist_dissimilarity, method = "ward.D2")
+hc <- hclust(dist_dissimilarity, method = "average")
 dend <- as.dendrogram(hc)
 
 # Get dendrogram leaf order
@@ -196,11 +196,11 @@ sample_colors <- function(time, condition) {
     } else if (is.na(time[i])) {
       colors[i] <- "white"
     } else if (time[i] <= 90) {
-      colors[i] <- "#FFD700"     # orange - Short-term
+      colors[i] <- "#FFD700"     # Short-term
     } else if (time[i] >= 120 & time[i] <= 960) {
-      colors[i] <- "#FFA500"     # yellow - Mid-term
+      colors[i] <- "#FFA500"     # Mid-term
     } else if (time[i] >= 1440) {
-      colors[i] <- "red"         # red - Long-term
+      colors[i] <- "red"         # Long-term
     } else {
       colors[i] <- "white"
     }
@@ -236,14 +236,14 @@ layout(matrix(c(1, 2), nrow = 2, byrow = TRUE), heights = c(1, 1))
 par(mar = c(0, 4, 4, 1))
 plot(dend,
      main = "Clustering of Experimental Conditions",
-     xlab = "", ylab = "Ward distance",
+     xlab = "", ylab = "Dissimilarity",
      horiz = FALSE,
      axes = FALSE,
      labels = FALSE)
 
-y_range <- par("yaxp")
-y_labels <- seq(floor(y_range[1]), ceiling(y_range[2]), by = 1)
-axis(side = 2, at = y_labels, labels = y_labels)
+# Manually set axis Y with correct range
+ylim <- c(0, 2)  # because dissimilarity = 1 - abs(correlation)
+axis(side = 2, at = seq(0, 2, by = 0.2), las = 2, cex.axis = 0.7)
 
 box()
 
